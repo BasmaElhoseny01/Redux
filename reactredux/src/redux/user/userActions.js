@@ -23,7 +23,7 @@ const fetchUsersFailure = error => {
     }
 }
 
-//Async Creators ==> it returns a function instead of object
+//Async Creators ==> it returns a function instead of object [Rem usage of Thunk]
 export const fetchUsers = () => {
     return function (dispatch) {
         dispatch(fetchUsersRequest())
